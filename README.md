@@ -65,8 +65,27 @@ sql
 | 테이블명        | 컬럼                                              | 설명                                |
 |----------------|--------------------------------------------------|-------------------------------------|
 | employees      | id, name, department, position, address, phone, photo, join_date | 직원 기본 정보                     |
-| attendance     | id, employee_id, date, clock_in, clock_out     | 출퇴근 시간 기록                    |
-| salary         | id, employee_id, department, position, year, total_salary | 급여 내역                     |
-| leave_requests | id, employee_id, start_date, end_date, status          | 휴가 신청                         |
+| attendance     | pk, employee_id, date, clock_in, clock_out     | 출퇴근 시간 기록                    |
+| salary         | pk, employee_id, department, position, year, total_salary | 급여 내역                     |
+| leave_requests | pk, employee_id, start_date, end_date, status          | 휴가 신청                         |
 
+---
+
+## 기술스택
+- **백엔드**: Java Spring Boot
+- **템플릿 엔진**: Thymeleaf
+- **데이터베이스**: MySQL / H2
+- **API**: RESTful API
+- **배치 작업**: Spring Batch
+
+---
+
+## 전체 화면 구성
+
+- 메뉴바: 좌측 배치, 기능별 이동 가능
+- 네 구역: 메인 페이지에서 각각의 정보를 한눈에 볼 수 있도록 네 구역 구성을 채택
+  - 왼쪽 상단: 직원 상세 정보 표
+  - 오른쪽 상단: 근태 현황 그래프
+  - 왼쪽 하단: 급여 내역 표
+  - 오른쪽 하단: 미확인 휴가 신청 요약
 
