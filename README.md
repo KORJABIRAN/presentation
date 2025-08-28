@@ -64,7 +64,7 @@ sql
 ## 技術スタック
 - **バックエンド**：Java Spring Boot
 - **テンプレートエンジン**：Thymeleaf
-- **データベース**：MySQL / H2
+- **データベース**：MySQL
 - **API**：RESTful API
 - **バッチ処理**：Spring Batch
 
