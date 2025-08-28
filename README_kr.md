@@ -1,4 +1,4 @@
-# 직원관리 ERP 시스템
+# HR 시스템
 
 ## 개요
 이 시스템은 Java Spring Boot와 Thymeleaf를 기반으로 개발된 직원 관리 시스템입니다.  
@@ -60,12 +60,12 @@
 
 ## 데이터베이스 테이블 설계
 sql
-| 테이블명        | 컬럼                                              | 설명                                |
+| TABLE        | COLUMN                                           | DESCRIPTION                                |
 |----------------|--------------------------------------------------|-------------------------------------|
 | employees      | id, name, department, position, address, phone, photo, join_date | 직원 기본 정보                     |
-| attendance     | pk, employee_id, date, clock_in, clock_out     | 출퇴근 시간 기록                    |
+| attendance     | pk, employee_id, date, clock_in_out, time     | 출퇴근 시간 기록                    |
 | salary         | pk, employee_id, department, position, year, total_salary | 급여 내역                     |
-| leave_requests | pk, employee_id, start_date, end_date, status          | 휴가 신청                         |
+| leave_requests | pk, employee_id, start_date, end_date, reason, status          | 휴가 신청                         |
 
 ---
 
